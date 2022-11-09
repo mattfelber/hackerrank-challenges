@@ -6,8 +6,19 @@
 #
 
 def diagonalDifference(arr):
-    d = (arr[0][0] + arr[1][1] + arr[2][2]) - (arr[0][2] + arr[1][1] + arr[2][0])
-    return abs(d)
+    right = 0
+    left = 0
+    i = 0
+    j = -1
+    arrlen = len(arr)
+
+    # for i in range(n):           # for a loop use this, and line 20.
+    while i < arrlen:  # replace this line with the above.
+        right += arr[i][i]
+        left += arr[i][0 - 1 - i]
+        i += 1
+        # j -= 1
+    return abs(right - left)
 
 
 n = int(input().strip())
