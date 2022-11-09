@@ -12,8 +12,8 @@ def diagonalDifference(arr):
     j = -1
     arrlen = len(arr)
 
-    # for i in range(n):           # for a loop use this, and line 20.
-    while i < arrlen:  # replace this line with the above.
+    # for i in range(n):           # for a loop use this line and line 20,
+    while i < arrlen:              # and remove this line.
         right += arr[i][i]
         left += arr[i][0 - 1 - i]
         i += 1
