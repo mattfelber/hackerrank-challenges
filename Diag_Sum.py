@@ -21,13 +21,3 @@ def diagonalDifference(arr):
     return abs(right - left)
 
 
-n = int(input().strip())
-
-arr = []
-
-for _ in range(n):
-    arr.append(list(map(int, input().rstrip().split())))
-
-result = diagonalDifference(arr)
-
-print(str(result))
